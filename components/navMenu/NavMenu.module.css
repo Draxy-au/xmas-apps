@@ -1,0 +1,50 @@
+.navMenu {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.navMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+ 
+  
+}
+
+.login {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  background-color: rgb(184, 183, 93);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.logout {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  background-color: rgb(184, 151, 93);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .navMenu {
+    font-size: 1rem;
+  }
+
+  .login {
+    font-size: 1rem;
+  }
+
+  .logout {
+    font-size: 1rem;
+  }
+}

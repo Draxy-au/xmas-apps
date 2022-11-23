@@ -1,0 +1,56 @@
+.editList {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: rgb(219, 197, 197);    
+  padding-top: 5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  padding: 0.5rem 0.5rem 1rem 0.5rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  background-color: rgba(44, 142, 72, 0.334);
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  margin-top: 1rem;
+}
+
+.listItem {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: rgb(33, 154, 114);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .editList {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-secretsanta-bg.jpg');
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+  }
+}

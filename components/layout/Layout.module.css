@@ -1,0 +1,22 @@
+.layout {
+  margin:0;
+  padding:0;
+}
+
+.header {
+  position: absolute;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-height: 5rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 4rem;
+}

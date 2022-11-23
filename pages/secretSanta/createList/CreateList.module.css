@@ -1,0 +1,50 @@
+.createList {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(219, 197, 197);    
+  padding-top: 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form input {
+  padding: 1rem 0.5rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: large;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(84, 213, 170);
+  border-radius: 1rem;
+}
+
+.error {
+  font-weight: bold;
+  color: rgb(231, 129, 129);
+}
+
+@media screen and (max-width: 600px) {
+  .createList {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-secretsanta-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+}
