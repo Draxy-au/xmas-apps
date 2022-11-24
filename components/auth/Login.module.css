@@ -40,3 +40,11 @@
   color: rgb(161, 5, 5);
   font-weight: bold;
 }
+
+.register {
+  cursor: pointer;
+}
+
+.register:hover {
+  color:rgb(86, 86, 250);
+}

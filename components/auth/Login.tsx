@@ -67,8 +67,10 @@ function Login({ setShowLogin }: LoginProps) {
         />
         <div className={styles.error}>{errors.password?.message}</div>
         <button type='submit'>Login</button>
-        <span onClick={() => {}}>Forgot Password?</span>
-        <span onClick={() => setShowLogin(false)}>Not Registered?</span>
+        {/* <span onClick={() => {}}>Forgot Password?</span> */}
+        <span className={styles.register} onClick={() => setShowLogin(false)}>
+          Not Registered?
+        </span>
       </form>
     </div>
   );
