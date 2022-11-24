@@ -27,7 +27,6 @@ function Home({ session, loggedIn, username, email, id }: HomeProps) {
       </Head>
       <main className={styles.main}>
         <MenuItems />
-        User: {username}
       </main>
     </div>
   );
