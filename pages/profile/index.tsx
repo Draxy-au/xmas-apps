@@ -3,12 +3,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 
 import styles from "./ProfilePage.module.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import NotificationContext from "../../contexts/notificationContext";
-import UserContext from "../../contexts/userContext";
+
 import { useRouter } from "next/router";
-import { Session } from "next-auth/core/types";
-import { getSession, useSession } from "next-auth/react";
+import { getSession } from "next-auth/react";
 
 type UpdateProfileForm = {
   username: string;
@@ -112,7 +111,9 @@ export async function getServerSideProps(context) {
   }
 
   const email = session.user.email;
-  const result = await fetch(`/api/user/${encodeURIComponent(email)}`);
+  const result = await fetch(
+    `http://www.draxyz.com/api/user/${encodeURIComponent(email)}`
+  );
   const userData = await result.json();
   const username = userData.username;
   const id = userData.id;
