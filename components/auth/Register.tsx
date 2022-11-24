@@ -47,7 +47,7 @@ function Register({ setShowLogin }: RegisterProps) {
   const onSubmit = async (data: RegisterSubmitForm) => {
     // console.log(JSON.stringify(data, null, 2));
     const { username, email, password } = data;
-    const response = await fetch("/api/auth/signup", {
+    const response = await fetch(`${process.env.API_SERVER}/api/auth/signup`, {
       method: "POST",
       body: JSON.stringify({
         username: username.trim(),
