@@ -47,7 +47,9 @@ export async function getServerSideProps(context) {
 
   const email = session.user.email;
   console.log("Got before fetch");
-  const result = await fetch(`/api/user/${encodeURIComponent(email)}`);
+  const result = await fetch(
+    `${process.env.API_SERVER}/api/user/${encodeURIComponent(email)}`
+  );
   const userData = await result.json();
   console.log("DEBUG USEDATA:", userData);
   const username = userData.username;
