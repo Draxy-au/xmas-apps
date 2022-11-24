@@ -44,7 +44,7 @@ function Login({ setShowLogin }: LoginProps) {
     // console.log(JSON.stringify(data, null, 2));
     const result = await signIn("credentials", {
       redirect: false,
-      email: data.email,
+      email: data.email.toLowerCase(),
       password: data.password,
     });
 
