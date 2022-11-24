@@ -2,7 +2,6 @@ import { Session } from "next-auth/core/types";
 import { getSession } from "next-auth/react";
 import Head from "next/head";
 
-import useSWR from "swr";
 import Loader from "../components/loading/Loader";
 import MenuItems from "../components/menu/MenuItems";
 
@@ -16,12 +15,8 @@ type HomeProps = {
   id: string;
 };
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
-
 function Home({ session, loggedIn, username, email, id }: HomeProps) {
-  const { data, error } = useSWR(`/api/user/${session?.user?.email}`, fetcher);
-
-  if (!data && loggedIn) return <Loader />;
+  if (!session && loggedIn) return <Loader />;
 
   return (
     <div className={styles.container}>
@@ -32,6 +27,7 @@ function Home({ session, loggedIn, username, email, id }: HomeProps) {
       </Head>
       <main className={styles.main}>
         <MenuItems />
+        User: {username}
       </main>
     </div>
   );
@@ -50,10 +46,10 @@ export async function getServerSideProps(context) {
   }
 
   const email = session.user.email;
-  const result = await fetch(
-    `${process.env.API_SERVER}/api/user/${encodeURIComponent(email)}`
-  );
+  console.log("Got before fetch");
+  const result = await fetch(`/api/user/${encodeURIComponent(email)}`);
   const userData = await result.json();
+  console.log("DEBUG USEDATA:", userData);
   const username = userData.username;
   const id = userData.id;
 

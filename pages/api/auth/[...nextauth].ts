@@ -13,6 +13,8 @@ export default NextAuth({
         maxAge: 60 * 60 * 24 * 30, // 30 days
         updateAge: 60 * 60 * 24 // 24 hours
     },
+    secret: process.env.NEXTAUTH_SECRET
+    ,
     providers: [
         CredentialProvider({
             name: "credentials",

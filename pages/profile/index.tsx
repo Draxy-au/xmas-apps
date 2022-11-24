@@ -111,10 +111,9 @@ export async function getServerSideProps(context) {
   }
 
   const email = session.user.email;
-  const result = await fetch(
-    `http://www.draxyz.com/api/user/${encodeURIComponent(email)}`
-  );
+  const result = await fetch("/api/user/${encodeURIComponent(email)}");
   const userData = await result.json();
+  console.log("Debug USERDATA:", userData);
   const username = userData.username;
   const id = userData.id;
 
