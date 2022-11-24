@@ -3,6 +3,7 @@ import { ReactNode, useContext } from "react";
 import NotificationContext from "../../contexts/notificationContext";
 import NavMenu from "../navMenu/NavMenu";
 import Notification from "../notification/Notification";
+import HomeIcon from "@mui/icons-material/Home";
 import styles from "./Layout.module.css";
 
 type LayoutProps = {
@@ -16,7 +17,10 @@ function Layout({ children }: LayoutProps) {
     <div className={styles.layout}>
       <div className={styles.header}>
         <Link href='/'>
-          <span className={styles.logo}>Will&apos;s Xmas Apps</span>
+          <span className={styles.logo}>
+            <HomeIcon />
+            Xmas Apps
+          </span>
         </Link>
         <NavMenu />
       </div>
