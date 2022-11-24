@@ -51,7 +51,7 @@ function Register({ setShowLogin }: RegisterProps) {
       method: "POST",
       body: JSON.stringify({
         username: username.trim(),
-        email: email.trim(),
+        email: email.trim().toLowerCase(),
         password: password,
       }),
       headers: {
