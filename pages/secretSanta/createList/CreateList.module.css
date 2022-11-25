@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-pc-secretsanta-bg.jpg');
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-pc-secretsanta-bg.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 600px) {
   .createList {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-secretsanta-bg.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-secretsanta-bg.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

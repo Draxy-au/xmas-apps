@@ -1,7 +1,7 @@
 .bg {
   position: fixed;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%,rgba(255, 255, 255, 0.1) 100%), url('/images/xmas-pc-games-bg.jpg');
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%,rgba(255, 255, 255, 0.1) 100%), url('/images/xmas-pc-games-bg.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 600px) {
   .bg {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-xmasgames-bg.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-xmasgames-bg.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
