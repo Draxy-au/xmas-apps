@@ -1,15 +1,26 @@
+.bg {
+  position: fixed;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%,rgba(255, 255, 255, 0.1) 100%), url('/images/xmas-pc-games-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;  
+  width: 100%; 
+  z-index: -1;
+}
+
 .xmasGames {
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
-  background: rgb(197, 214, 219);    
+  height: 100vh;      
   padding-top: 5rem;
 }
 
 @media screen and (max-width: 600px) {
-  .xmasGames {
+  .bg {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%,rgba(255, 255, 255, 0.02) 100%), url('/images/xmas-xmasgames-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;

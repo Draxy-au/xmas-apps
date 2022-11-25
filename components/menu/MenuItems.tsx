@@ -34,7 +34,7 @@ function MenuItems() {
               className={styles.button}
               style={{ backgroundColor: "#3de76d" }}
             >
-              Gift Lists
+              Wish Lists
             </button>
           </Link>
         ) : (
@@ -43,7 +43,7 @@ function MenuItems() {
               className={styles.button}
               style={{ backgroundColor: "#3de76d" }}
             >
-              Gift Lists
+              Wish Lists
             </button>
           </Link>
         )}
