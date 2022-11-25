@@ -19,7 +19,16 @@ function Layout({ children }: LayoutProps) {
         <Link href='/'>
           <span className={styles.logo}>
             <HomeIcon />
-            Xmas Apps
+            <span>
+              <span style={{ color: "#3de76d" }}>X</span>
+              <span style={{ color: "rgb(226, 112, 112)" }}>m</span>
+              <span style={{ color: "#3DD1E7" }}>a</span>
+              <span style={{ color: "yellow" }}>s</span>
+              <span style={{ color: "rgb(226, 112, 112)" }}> A</span>
+              <span style={{ color: "#3de76d" }}>p</span>
+              <span style={{ color: "#3DD1E7" }}>p</span>
+              <span style={{ color: "yellow" }}>s</span>
+            </span>
           </span>
         </Link>
         <NavMenu />
